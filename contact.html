@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3ede4" />
+    <title>Contact — Sakanela</title>
+    <meta
+      name="description"
+      content="Write to Sakanela about a dwelling, courtyard, or public interior. Front-end validated enquiry form."
+    />
+    <meta property="og:title" content="Contact — Sakanela" />
+    <meta property="og:description" content="Start a conversation with the studio." />
+    <meta property="og:image" content="./images/og-image.svg" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400&family=Outfit:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/main-B_eOJTC2.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/style-BZfVRVYf.css">
+  </head>
+  <body class="page-shell" data-page="contact" id="top">
+    <div
+      class="site-loader"
+      data-site-loader
+      role="status"
+      aria-live="polite"
+      aria-busy="true"
+      aria-label="Loading Sakanela"
+    >
+      <div class="site-loader__panel site-loader__panel--left" data-loader-panel="left"></div>
+      <div class="site-loader__panel site-loader__panel--right" data-loader-panel="right"></div>
+      <div class="site-loader__brand" data-loader-brand></div>
+    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-header>
+      <div class="site-header__inner">
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle__bars" aria-hidden="true">
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+          </span>
+          <span class="nav-toggle__label">Menu</span>
+        </button>
+        <a class="logo" href="./index.html" aria-label="Sakanela home">
+          <img
+            src="./assets/en_logo-BOT-9gt9.svg"
+            alt="Sakanela by Silk Development"
+            width="280"
+            height="34"
+          />
+        </a>
+        <a class="btn btn--primary site-header__contact" href="contact.html">
+          Contacts
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </header>
+    <nav class="site-nav" id="site-nav" data-nav data-lenis-prevent>
+      <ul class="site-nav__list">
+        <li>
+          <a class="site-nav__link" href="./index.html" data-nav-link>
+            <span class="site-nav__spin"><span class="site-nav__face">Home</span><span class="site-nav__face site-nav__face--next" aria-hidden="true">Home</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="site-nav__link" href="about.html" data-nav-link>
+            <span class="site-nav__spin"><span class="site-nav__face">About</span><span class="site-nav__face site-nav__face--next" aria-hidden="true">About</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="site-nav__link" href="contact.html" data-nav-link>
+            <span class="site-nav__spin"><span class="site-nav__face">Contact</span><span class="site-nav__face site-nav__face--next" aria-hidden="true">Contact</span></span>
+          </a>
+        </li>
+      </ul>
+      <div class="site-nav__languages" aria-label="Language">
+        <a class="site-nav__language is-active" href="contact.html" hreflang="en" lang="en" aria-current="true" aria-label="English"><span class="site-nav__language-text"><span class="site-nav__spin"><span class="site-nav__face">EN</span><span class="site-nav__face site-nav__face--next" aria-hidden="true">EN</span></span></span></a>
+        <a class="site-nav__language" href="contact.html" hreflang="ka" lang="ka" aria-label="Georgian"><span class="site-nav__language-text"><span class="site-nav__spin"><span class="site-nav__face">GE</span><span class="site-nav__face site-nav__face--next" aria-hidden="true">GE</span></span></span></a>
+        <a class="site-nav__language" href="contact.html" hreflang="ru" lang="ru" aria-label="Russian"><span class="site-nav__language-text"><span class="site-nav__spin"><span class="site-nav__face">RU</span><span class="site-nav__face site-nav__face--next" aria-hidden="true">RU</span></span></span></a>
+      </div>
+    </nav>
+
+    <main id="main">
+      <header class="page-hero">
+        <div class="container" data-animate>
+          <p class="eyebrow">Enquiry</p>
+          <h1 class="page-hero__title">Tell us about the room.</h1>
+          <p class="lede">
+            A few sentences are enough to start. We reply within a few atelier days — usually with
+            questions, not a pitch deck.
+          </p>
+        </div>
+      </header>
+
+      <section class="section section--tight">
+        <div class="container contact-layout">
+          <form class="form" data-contact-form novalidate data-animate>
+            <div class="form__row">
+              <div class="field">
+                <label class="field__label" for="name">Name</label>
+                <input
+                  class="field__control"
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  data-validate="required|min:2"
+                  aria-describedby="name-error"
+                />
+                <p class="field__error" id="name-error" role="alert"></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="email">Email</label>
+                <input
+                  class="field__control"
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  data-validate="required|email"
+                  aria-describedby="email-error"
+                />
+                <p class="field__error" id="email-error" role="alert"></p>
+              </div>
+            </div>
+            <div class="field">
+              <label class="field__label" for="project">Project type</label>
+              <select class="field__control" id="project" name="project">
+                <option value="dwelling">Dwelling / interior</option>
+                <option value="courtyard">Courtyard / garden</option>
+                <option value="civic">Civic / workplace</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label class="field__label" for="message">Message</label>
+              <textarea
+                class="field__control"
+                id="message"
+                name="message"
+                data-validate="required|min:20"
+                aria-describedby="message-hint message-error"
+              ></textarea>
+              <p class="field__hint" id="message-hint">
+                Site, brief, and timing — twenty characters at least.
+              </p>
+              <p class="field__error" id="message-error" role="alert"></p>
+            </div>
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit">
+                MORE
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+              <p class="form__status" data-form-status role="status" aria-live="polite"></p>
+            </div>
+          </form>
+
+          <aside class="contact-aside" data-animate data-animate-delay="1">
+            <div>
+              <p class="contact-aside__label">Email</p>
+              <a class="contact-aside__value" href="mailto:hello@sakanela.ge">hello@sakanela.ge</a>
+            </div>
+            <div>
+              <p class="contact-aside__label">Studio</p>
+              <p class="contact-aside__value">Tbilisi</p>
+              <p class="card__text">Mon–Thu, 10–18. Site visits by arrangement.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="modal"
+      data-modal="success"
+      aria-hidden="true"
+      role="dialog"
+      aria-labelledby="success-title"
+    >
+      <div class="modal__backdrop" data-modal-backdrop></div>
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-modal-close aria-label="Close">
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+            <path
+              d="M4 4l8 8M12 4l-8 8"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.4"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+        <h2 class="modal__title" id="success-title">Message received</h2>
+        <p class="modal__text">
+          Thank you. The studio will write back shortly. This is a front-end stub until an API
+          endpoint is wired in.
+        </p>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div class="site-footer__intro">
+          <h2 class="site-footer__title">Let’s talk</h2>
+          <div class="site-footer__contacts">
+            <div class="site-footer__item">
+              <p class="site-footer__label">Email</p>
+              <a class="site-footer__value underline" href="mailto:hello@sakanela.ge">hello@sakanela.ge</a>
+            </div>
+            <div class="site-footer__item">
+              <p class="site-footer__label">Phone</p>
+              <a class="site-footer__value underline" href="tel:+9954747447">+995 47 474 47</a>
+            </div>
+            <div class="site-footer__item">
+              <p class="site-footer__label">3 Tengiz Abuladze</p>
+              <p class="site-footer__value underline">Batumi, Georgia</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="site-footer__menus">
+          <nav class="site-footer__col" aria-labelledby="footer-sitemap">
+            <p class="site-footer__heading" id="footer-sitemap">Sitemap</p>
+            <ul class="site-footer__list">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="about.html">About Project</a></li>
+              <li><a href="./index.html#architecture">Architecture &amp; Design</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <nav class="site-footer__col" aria-labelledby="footer-legal">
+            <p class="site-footer__heading" id="footer-legal">Legal</p>
+            <ul class="site-footer__list">
+              <li><a href="#terms">Terms &amp; Conditions</a></li>
+              <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+          </nav>
+          <nav class="site-footer__col" aria-labelledby="footer-social">
+            <p class="site-footer__heading" id="footer-social">Follow Us</p>
+            <ul class="site-footer__list">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </nav>
+          <div class="site-footer__col">
+            <a class="site-footer__heading site-footer__top" href="#top" data-back-to-top>
+              Back to top
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container site-footer__bar">
+        <p>&copy; <span data-year></span> All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <aside
+      class="cookie-banner"
+      data-cookie-banner
+      hidden
+      role="dialog"
+      aria-labelledby="cookie-banner-title"
+    >
+      <p class="cookie-banner__text" id="cookie-banner-title">
+        We use cookies to enhance<br />
+        Your experience
+      </p>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__btn--accept" type="button" data-cookie-accept>Accept</button>
+        <button class="cookie-banner__btn cookie-banner__btn--reject" type="button" data-cookie-decline>Decline</button>
+      </div>
+    </aside>
+
+  </body>
+</html>

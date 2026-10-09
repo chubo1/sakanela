@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f3ede4" />
+  <title>Sakanela — architecture & design</title>
+  <meta name="description"
+    content="Sakanela is a project about the history of Sakanela and the way of living at Sakanela." />
+  <meta property="og:title" content="Sakanela — architecture & design" />
+  <meta property="og:description"
+    content="Interiors, courtyards, and rooms designed to hold silence as carefully as light." />
+  <meta property="og:image" content="./images/og-image.svg" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400&family=Outfit:wght@200;300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <script type="module" crossorigin src="./assets/main-B_eOJTC2.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/style-BZfVRVYf.css">
+</head>
+
+<body class="page-shell about-page" data-page="about" id="top">
+  <div class="site-loader" data-site-loader role="status" aria-live="polite" aria-busy="true"
+    aria-label="Loading Sakanela">
+    <div class="site-loader__panel site-loader__panel--left" data-loader-panel="left"></div>
+    <div class="site-loader__panel site-loader__panel--right" data-loader-panel="right"></div>
+    <div class="site-loader__brand" data-loader-brand></div>
+  </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header site-header--overlay" data-header>
+    <div class="site-header__inner">
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav"
+        aria-label="Open menu">
+        <span class="nav-toggle__bars" aria-hidden="true">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </span>
+        <span class="nav-toggle__label">architecture & design</span>
+      </button>
+      <a class="logo" href="index.html" aria-label="Sakanela home">
+        <img src="./assets/en_logo-BOT-9gt9.svg" alt="Sakanela by Silk Development" width="280" height="34" />
+      </a>
+      <a class="btn btn--outline site-header__contact" href="contact.html"> Contacts </a>
+    </div>
+  </header>
+  <nav class="site-nav" id="site-nav" data-nav data-lenis-prevent>
+    <ul class="site-nav__list">
+      <li>
+        <a class="site-nav__link" href="./index.html" data-nav-link>
+          <span class="site-nav__spin"><span class="site-nav__face">Homepage</span><span
+              class="site-nav__face site-nav__face--next" aria-hidden="true">Homepage</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="site-nav__link" href="about.html" data-nav-link>
+          <span class="site-nav__spin"><span class="site-nav__face">About project</span><span
+              class="site-nav__face site-nav__face--next" aria-hidden="true">About project</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="site-nav__link" href="architecture.html" data-nav-link>
+          <span class="site-nav__spin"><span class="site-nav__face">architecture & design</span><span
+              class="site-nav__face site-nav__face--next" aria-hidden="true">architecture & design</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="site-nav__link" href="about.html" data-nav-link>
+          <span class="site-nav__spin"><span class="site-nav__face">news</span><span
+              class="site-nav__face site-nav__face--next" aria-hidden="true">news</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="site-nav__link" href="contact.html" data-nav-link>
+          <span class="site-nav__spin"><span class="site-nav__face">Contact</span><span
+              class="site-nav__face site-nav__face--next" aria-hidden="true">Contact</span></span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="site-nav__footer">
+      <div class="site-nav__contact">
+        <p class="site-nav__contact-label">Email</p>
+        <a class="site-nav__contact-value" href="mailto:hello@sakanela.ge">hello@sakanela.ge</a>
+      </div>
+      <div class="site-nav__contact">
+        <p class="site-nav__contact-label">Phone</p>
+        <a class="site-nav__contact-value" href="tel:+9954747447">+995 47 474 47</a>
+      </div>
+      <nav class="site-nav__contact" aria-label="Follow Us">
+        <p class="site-nav__contact-label">Follow Us</p>
+        <ul class="site-nav__social">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Linkedin</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="site-nav__languages" aria-label="Language">
+      <a class="site-nav__language is-active" href="index.html" hreflang="en" lang="en" aria-current="true"
+        aria-label="English"><span class="site-nav__language-text"><span class="site-nav__spin"><span
+              class="site-nav__face">EN</span><span class="site-nav__face site-nav__face--next"
+              aria-hidden="true">EN</span></span></span></a>
+      <a class="site-nav__language" href="index.html" hreflang="ka" lang="ka" aria-label="Georgian"><span
+          class="site-nav__language-text"><span class="site-nav__spin"><span class="site-nav__face">GE</span><span
+              class="site-nav__face site-nav__face--next" aria-hidden="true">GE</span></span></span></a>
+      <a class="site-nav__language" href="index.html" hreflang="ru" lang="ru" aria-label="Russian"><span
+          class="site-nav__language-text"><span class="site-nav__spin"><span class="site-nav__face">RU</span><span
+              class="site-nav__face site-nav__face--next" aria-hidden="true">RU</span></span></span></a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <nav class="section-nav is-collapsed" data-section-nav aria-label="On this page">
+      <div class="section-nav__head">
+        <button class="section-nav__close" type="button" data-section-nav-close aria-expanded="false"
+          aria-controls="section-nav-list" aria-label="Open project story">
+          <p class="section-nav__label">Project story</p>
+          <svg viewBox="0 0 12 12" width="20" height="20" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1">
+              <line class="section-nav__icon-line section-nav__icon-line--top" x1="0.5" y1="3" x2="11.5" y2="3" />
+              <line class="section-nav__icon-line section-nav__icon-line--middle" x1="0.5" y1="6" x2="11.5" y2="6" />
+              <line class="section-nav__icon-line section-nav__icon-line--bottom" x1="0.5" y1="9" x2="11.5" y2="9" />
+            </g>
+          </svg>
+        </button>
+      </div>
+      <ul class="section-nav__list" id="section-nav-list" inert aria-hidden="true">
+        <li>
+          <a class="section-nav__link" href="#overview" data-section-link>overview</a>
+        </li>
+        <li>
+          <a class="section-nav__link" href="#about-graft" data-section-link>about graft</a>
+        </li>
+        <li>
+          <a class="section-nav__link" href="#concept" data-section-link>concept</a>
+        </li>
+        <li>
+          <a class="section-nav__link" href="#facededesign" data-section-link>facade design</a>
+        </li>
+        <li>
+          <a class="section-nav__link" href="#details" data-section-link>interior spaces</a>
+        </li>
+        <li>
+          <a class="section-nav__link" href="#materials" data-section-link>materials</a>
+        </li>
+        <li>
+          <a class="section-nav__link" href="#lanscape_design" data-section-link>landscape design</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="story-scene" data-hero-scene data-parallax-trigger data-parallax-start="top top"
+      data-parallax-end="bottom bottom">
+
+      <section class="section about-story about-story--overview" id="overview" data-overview data-nav-tone="dark"
+        aria-labelledby="about-story-title">
+        <div class="hero__wave" aria-hidden="true"></div>
+        <div class="container about-story__inner">
+          <header class="about-story__head">
+            <p class="about-story__eyebrow" data-animate>Overview</p>
+            <h2 class="about-story__title" id="about-story-title" data-animate>
+              <span class="about-story__title-line">Tbilisi character,</span>
+              <span class="about-story__title-line about-story__title-line--accent">
+                contemporary architecture
+              </span>
+            </h2>
+            <div class="about-story__copy margin-top-40" data-animate>
+                <p>
+                  The architecture of Sakanela was envisioned by the German studio GRAFT. The
+                  project’s central inspiration is the location itself: its rich history, the
+                  distinctive façades of old Tbilisi, traditional balconies, and complex
+                  architectural details. The architecture of Sakanela was envisioned by the German studio GRAFT. The
+                  project’s central inspiration is the location itself: its rich history, the
+                  distinctive façades of old Tbilisi, traditional balconies, and complex
+                  architectural details.
+                </p>
+                <p>
+                  Rather than directly replicating these historic elements, GRAFT reinterprets them
+                  in a universal language of contemporary architecture.
+                </p>
+              </div>
+          </header>
+
+          <div class="about-story__grid">
+            <div class="about-story__col about-story__col--left">
+              <figure class="about-story__figure about-story__figure--archive">
+                <div class="about-story__slides" data-overview-slider>
+                  <figure class="about-story__slide" data-overview-slide>
+                    <img src="./assets/test1-BouGx2A-.jpg" alt="Historic hillside streets of old Tbilisi"
+                      width="720" height="480" loading="lazy" />
+                  </figure>
+                  <figure class="about-story__slide" data-overview-slide>
+                    <img src="./assets/test2-DdNERu1Z.jpg"
+                      alt="Meeting room looking out toward the city" width="720" height="480" loading="lazy" />
+                  </figure>
+                  <figure class="about-story__slide" data-overview-slide>
+                    <img src="./assets/test1-BouGx2A-.jpg" alt="Dining room with a long shared table"
+                      width="720" height="480" loading="lazy" />
+                  </figure>
+                </div>
+              </figure>
+            </div>
+
+            <div class="about-story__col about-story__col--right">
+              <figure class="about-story__figure about-story__figure--render">
+                <div class="about-story__slides" data-overview-slider>
+                  <figure class="about-story__slide" data-overview-slide>
+                    <img src="./assets/living-work-CagOerW_.jpg"
+                      alt="Contemporary architecture in the Tbilisi skyline beneath Mtatsminda" width="1200"
+                      height="800" loading="lazy" />
+                  </figure>
+                  <figure class="about-story__slide" data-overview-slide>
+                    <img src="./assets/living-fitness-CMME_tqV.jpg"
+                      alt="Courtyard and pool framed by Sakanela’s architecture" width="1200" height="800"
+                      loading="lazy" />
+                  </figure>
+                  <figure class="about-story__slide" data-overview-slide>
+                    <img src="./assets/living-relaxation-B8qcAdIz.jpg"
+                      alt="Rooftop terrace looking toward a vine-covered building at Sakanela" width="1200" height="800"
+                      loading="lazy" />
+                  </figure>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="section about-graft" id="about-graft" data-nav-tone="dark" aria-labelledby="about-graft-title">
+      <div class="about-graft__marks" aria-hidden="true">
+        <img src="./assets/bg-B_ME5D2B.svg" alt="" width="171" height="92" />
+      </div>
+      <div class="container about-graft__inner">
+        <header class="about-graft__head">
+          <p class="about-graft__eyebrow" data-animate>About Graft</p>
+          <h2 class="about-graft__title" id="about-graft-title" data-animate>
+            <span class="about-graft__title-line">International</span>
+            <span class="about-graft__title-line-two">Architecture Studio</span>
+          </h2>
+          <p class="about-graft__copy" data-animate data-animate-delay="1">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+            been the industry’s standard dummy text ever since 1966, when designers at Letraset and
+            James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero
+            translation and scrambled it to make dummy text for Letraset’s Body Type sheets
+          </p>
+        </header>
+
+        <ul class="about-graft__projects">
+          <li class="about-graft__project">
+            <figure class="about-graft__media" data-animate data-animate-delay="1">
+              <img src="./assets/living-work-CagOerW_.jpg" alt="Charlie Living residential building"
+                width="1200" height="800" loading="lazy" />
+            </figure>
+            <h3 class="about-graft__name">Charlie Living</h3>
+          </li>
+          <li class="about-graft__project">
+            <figure class="about-graft__media" data-animate data-animate-delay="2">
+              <img src="./assets/living-fitness-CMME_tqV.jpg" alt="Cavallino Bianco public building"
+                width="1200" height="800" loading="lazy" />
+            </figure>
+            <h3 class="about-graft__name">Cavallino Bianco</h3>
+          </li>
+          <li class="about-graft__project">
+            <figure class="about-graft__media" data-animate data-animate-delay="3">
+              <img src="./assets/living-relaxation-B8qcAdIz.jpg" alt="Wieweil residential towers"
+                width="1200" height="800" loading="lazy" />
+            </figure>
+            <h3 class="about-graft__name">Wieweil</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="architecture concept" id="concept" data-nav-tone="light" data-concept
+      aria-labelledby="concept-title">
+      <div class="container architecture__inner">
+        <p class="architecture__eyebrow" data-animate>Architecture concept</p>
+
+        <div class="architecture__layout">
+          <h2 class="architecture__title" id="concept-title" data-animate>
+            <span class="architecture__title-lead">A new standard of</span>
+            <span class="architecture__title-lead">City-centre living</span>
+          </h2>
+
+          <div class="architecture__media">
+            <div class="architecture__slides">
+              <figure class="architecture__slide" data-concept-slide>
+                <img src="./assets/hero-psN3aJe4.jpg" alt="Sakanela towers beside the waterfront" width="1200"
+                  height="800" loading="lazy" />
+              </figure>
+              <figure class="architecture__slide" data-concept-slide>
+                <img src="./assets/history_1-C6_EOkde.jpg" alt="Tbilisi skyline and the Mtkvari River at dusk"
+                  width="1200" height="800" loading="lazy" />
+              </figure>
+              <figure class="architecture__slide" data-concept-slide>
+                <img src="./assets/history_2-Bi2GWXyz.jpg" alt="Contemporary streetscape near Sakanela"
+                  width="1200" height="800" loading="lazy" />
+              </figure>
+              <figure class="architecture__slide" data-concept-slide>
+                <img src="./assets/living-relaxation-B8qcAdIz.jpg"
+                  alt="Courtyard and pool framed by Sakanela’s architecture" width="1200" height="800"
+                  loading="lazy" />
+              </figure>
+              <figure class="architecture__slide" data-concept-slide>
+                <img src="./assets/living-work-CagOerW_.jpg"
+                  alt="Quiet interior corridor with glass-walled workspaces" width="1200" height="800"
+                  loading="lazy" />
+              </figure>
+            </div>
+          </div>
+
+          <div class="architecture__content" data-animate data-animate-delay="1">
+            <div class="architecture__copy">
+              <p>
+                Rather than a single massive block, Sakanela is designed as seven distinct buildings
+                distributed across two hectares.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry’s standard dummy text ever since 1966, when designers at
+                Letraset and James Mosley, the librarian at St Bride Printing Library in London, took
+                a 1914 Cicero translation and scrambled it to make dummy text for Letraset’s Body Type
+                sheets. It has survived not only many decades, but also the leap into electronic
+                typesetting, remaining essentially unchanged. It was popularised thanks to these
+                sheets and more recently with desktop publishing software like Aldus PageMaker and
+                Microsoft Word including versions of Lorem Ipsum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="facade" id="facededesign" data-nav-tone="dark" data-facade aria-labelledby="facededesign-title">
+      <div class="facade__marks" aria-hidden="true">
+        <img src="./assets/bg-B_ME5D2B.svg" alt="" width="171" height="92" />
+      </div>
+      <div class="container facade__inner">
+        <div class="facade__layout">
+          <header class="facade__head">
+            <p class="facade__eyebrow" data-animate>Facade design</p>
+            <h2 class="facade__title" id="facededesign-title" data-animate>
+              <span class="facade__title-line">Lorem ipsum</span>
+              <span class="facade__title-line facade__title-line--accent">Dolor sit amet</span>
+            </h2>
+            <div class="facade__copy" data-animate data-animate-delay="1">
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+                labore et dolore magnam aliquam quaerat voluptatem.
+              </p>
+            </div>
+          </header>
+
+          <figure class="facade__still">
+            <img src="./assets/hero-psN3aJe4.jpg" alt="Contemporary city skyline beneath a green hillside"
+              width="1200" height="800" loading="lazy" />
+          </figure>
+
+          <div class="facade__media">
+            <div class="facade__slides">
+              <figure class="facade__slide" data-facade-slide>
+                <img src="./assets/test1-BouGx2A-.jpg" alt="Historic bridge and hillside streets of old Tbilisi"
+                  width="1200" height="800" loading="lazy" />
+              </figure>
+              <figure class="facade__slide" data-facade-slide>
+                <img src="./assets/test2-DdNERu1Z.jpg" alt="Historic streetscape of old Tbilisi" width="1200"
+                  height="800" loading="lazy" />
+              </figure>
+              <figure class="facade__slide" data-facade-slide>
+                <img src="./assets/test1-BouGx2A-.jpg" alt="Historic bridge and hillside streets of old Tbilisi"
+                  width="1200" height="800" loading="lazy" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="amenities" id="details" data-nav-tone="light" data-amenities aria-labelledby="details-title">
+        <div class="hero__wave" aria-hidden="true"></div>
+        <div class="container amenities__inner">
+        <div class="amenities__layout">
+          <div class="amenities__media">
+            <div class="amenities__slides">
+              <figure class="amenities__slide" data-amenities-slide>
+                <img src="./assets/living-relaxation-B8qcAdIz.jpg" alt="Indoor pool and timber wellness room"
+                  width="1200" height="800" loading="lazy" />
+                <figcaption class="amenities__caption">A premium spa<br />and wellness area</figcaption>
+              </figure>
+              <figure class="amenities__slide" data-amenities-slide>
+                <img src="./assets/living-fitness-CMME_tqV.jpg" alt="Indoor swimming pool" width="1200"
+                  height="800" loading="lazy" />
+                <figcaption class="amenities__caption">A 25 metre indoor<br />swimming pool</figcaption>
+              </figure>
+              <figure class="amenities__slide" data-amenities-slide>
+                <img src="./assets/living-spa-CbJZ00Tz.jpg" alt="Fitness centre with open training floor"
+                  width="1200" height="800" loading="lazy" />
+                <figcaption class="amenities__caption">An expansive 600 sq.m<br />fitness centre</figcaption>
+              </figure>
+              <figure class="amenities__slide" data-amenities-slide>
+                <img src="./assets/living-meetings-BbV3FiC0.jpg" alt="Group fitness studio" width="1200"
+                  height="800" loading="lazy" />
+                <figcaption class="amenities__caption">Group fitness<br />studios</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="amenities__content">
+            <p class="amenities__eyebrow" data-animate>Interior spaces</p>
+            <h2 class="amenities__title" id="details-title">
+              <span class="amenities__title-line">The standard</span>
+              <span class="amenities__title-line">lorem ipsum</span>
+              <span class="amenities__title-line">passage</span>
+            </h2>
+            <div class="amenities__copy" data-animate data-animate-delay="1">
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              </p>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                aliquam quaerat voluptatem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="materials" id="materials" data-nav-tone="light" aria-labelledby="materials-title">
+      <div class="container materials__inner">
+        <div class="materials__copy">
+          <p class="materials__eyebrow" data-animate>Materials</p>
+          <h2 class="materials__title" id="materials-title" data-animate>
+            <span class="materials__title-line">Materials and</span>
+            <span class="materials__title-line materials__title-line--accent">Technical solutions</span>
+          </h2>
+          <div class="materials__text" data-animate data-animate-delay="1">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry’s standard dummy text ever since 1966, when designers at Letraset
+              and James Mosley, the librarian at St Bride Printing Library in London, took a 1914
+              Cicero translation and scrambled it to make dummy text for Letraset’s Body Type sheets.
+              It has survived not only many decades, but also the leap into electronic typesetting,
+              remaining essentially unchanged. It was popularised thanks to these sheets and more
+              recently with desktop publishing software like Aldus PageMaker and Microsoft Word
+              including versions of Lorem Ipsum.
+            </p>
+            <p>
+              Scrambled it to make dummy text for Letraset’s Body Type sheets. It has survived not
+              only many decades, but also the leap into electronic typesetting, remaining essentially
+              unchanged. It was popularised thanks to these sheets and more recently with desktop
+              publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem
+              Ipsum.
+            </p>
+          </div>
+        </div>
+
+        <div class="materials__gallery" data-parallax-trigger>
+          <figure class="materials__frame materials__frame--top">
+            <img src="./assets/hero-psN3aJe4.jpg" alt="Sakanela towers beside the waterfront" width="1600"
+              height="1000" loading="lazy" data-parallax-speed="0.4" />
+          </figure>
+          <figure class="materials__frame materials__frame--mid">
+            <img src="./assets/history_2-Bi2GWXyz.jpg" alt="Planted terrace and living facade" width="1600"
+              height="1000" loading="lazy" data-parallax-speed="-0.36" />
+          </figure>
+          <figure class="materials__frame materials__frame--bottom">
+            <img src="./assets/hero-psN3aJe4.jpg" alt="Sakanela towers beside the waterfront" width="1600"
+              height="1000" loading="lazy" data-parallax-speed="0.44" />
+          </figure>
+          <div class="materials__bg">
+            <img src="./assets/bg-B_ME5D2B.svg" alt="Sakanela towers beside the waterfront" width="1600"
+              height="1000" loading="lazy" data-parallax-speed="0.44" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="landscape" id="lanscape_design" data-nav-tone="dark" data-landscape
+      aria-labelledby="landscape-title">
+      <div class="container landscape__inner">
+        <div class="landscape__media">
+          <div class="landscape__slides">
+            <figure class="landscape__slide" data-landscape-slide>
+              <img src="./assets/history_2-Bi2GWXyz.jpg"
+                alt="Planted terrace and living facade at Sakanela" width="1600" height="1000" loading="lazy" />
+            </figure>
+            <figure class="landscape__slide" data-landscape-slide>
+              <img src="./assets/test2-DdNERu1Z.jpg" alt="Trees and planted hillside around the project"
+                width="1600" height="1000" loading="lazy" />
+            </figure>
+            <figure class="landscape__slide" data-landscape-slide>
+              <img src="./assets/test1-BouGx2A-.jpg" alt="Quiet interior opening toward planted courtyards"
+                width="1200" height="1600" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="landscape__content">
+          <p class="landscape__eyebrow" data-animate>Landscape design</p>
+          <h2 class="landscape__title" id="landscape-title" data-animate>
+            <span class="landscape__title-line landscape__title-line--light">Greenery as a</span>
+            <span class="landscape__title-line landscape__title-line--gold">natural part</span>
+            <span class="landscape__title-line landscape__title-line--gold">of daily</span>
+            <span class="landscape__title-line landscape__title-line--gold">environment</span>
+          </h2>
+          <div class="landscape__copy" data-animate data-animate-delay="1">
+            <p>
+              The landscaping at Sakenela is far more than a visual accent. Trees, plants,
+              shaded pathways, water elements, and tranquil seating areas are woven into
+              the very fabric of the project layout, transforming the entire territory into a
+              comfortable environment for everyday life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section class="section roadmap" id="roadmap" data-nav-tone="dark" aria-labelledby="roadmap-title">
+      <div class="container roadmap__inner">
+        <h2 class="roadmap__title" id="roadmap-title" data-animate>Roadmap</h2>
+        <a class="roadmap__stream" href="#" data-animate data-animate-delay="1">
+          See Live Stream
+          <span class="roadmap__live" aria-hidden="true"></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__intro">
+        <h2 class="site-footer__title">Let’s talk</h2>
+        <div class="site-footer__contacts">
+          <div class="site-footer__item">
+            <p class="site-footer__label">Email</p>
+            <a class="site-footer__value underline" href="mailto:hello@sakanela.ge">hello@sakanela.ge</a>
+          </div>
+          <div class="site-footer__item">
+            <p class="site-footer__label">Phone</p>
+            <a class="site-footer__value underline" href="tel:+9954747447">+995 47 474 47</a>
+          </div>
+          <div class="site-footer__item">
+            <p class="site-footer__label">3 Tengiz Abuladze</p>
+            <p class="site-footer__value underline">Batumi, Georgia</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__menus">
+        <nav class="site-footer__col" aria-labelledby="footer-sitemap">
+          <p class="site-footer__heading" id="footer-sitemap">Sitemap</p>
+          <ul class="site-footer__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Project</a></li>
+            <li><a href="#architecture">Architecture &amp; Design</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="site-footer__col" aria-labelledby="footer-legal">
+          <p class="site-footer__heading" id="footer-legal">Legal</p>
+          <ul class="site-footer__list">
+            <li><a href="#terms">Terms &amp; Conditions</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+          </ul>
+        </nav>
+        <nav class="site-footer__col" aria-labelledby="footer-social">
+          <p class="site-footer__heading" id="footer-social">Follow Us</p>
+          <ul class="site-footer__list">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </nav>
+        <div class="site-footer__col">
+          <a class="site-footer__heading site-footer__top" href="#top" data-back-to-top>
+            Back to top
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container site-footer__bar">
+      <p>&copy; <span data-year></span> All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <aside class="cookie-banner" data-cookie-banner hidden role="dialog" aria-labelledby="cookie-banner-title">
+    <p class="cookie-banner__text" id="cookie-banner-title">
+      We use cookies to enhance<br />
+      Your experience
+    </p>
+    <div class="cookie-banner__actions">
+      <button class="cookie-banner__btn cookie-banner__btn--accept" type="button" data-cookie-accept>Accept</button>
+      <button class="cookie-banner__btn cookie-banner__btn--reject" type="button" data-cookie-decline>Decline</button>
+    </div>
+  </aside>
+
+</body>
+
+</html>
