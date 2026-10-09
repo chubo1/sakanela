@@ -1,0 +1,129 @@
+@use 'sass:math';
+
+// ---------------------------------------------------------------------------
+// Color tokens (Sass). CSS custom properties are emitted once via `css-tokens`.
+// ---------------------------------------------------------------------------
+$color-bg: #f3ede4;
+$color-bg-elevated: #faf7f2;
+$color-ink: #1c1916;
+$color-ink-soft: #4a453f;
+$color-muted: #7a736a;
+$color-line: #d9d0c4;
+$color-accent: #c2410c;
+$color-accent-deep: #9a3412;
+$color-sage: #4d5c4a;
+$color-loader: #1e3a32;
+$color-paper: #e8dfd2;
+$color-inverse: #f3ede4;
+$color-danger: #b42318;
+$color-success: #3f6b4a;
+$color-black: #000;
+$color-white: #fff;
+$color-active-link: #a6794e;
+
+$colors: (
+  'bg': $color-bg,
+  'bg-elevated': $color-bg-elevated,
+  'ink': $color-ink,
+  'ink-soft': $color-ink-soft,
+  'muted': $color-muted,
+  'line': $color-line,
+  'accent': $color-accent,
+  'accent-deep': $color-accent-deep,
+  'sage': $color-sage,
+  'loader': $color-loader,
+  'paper': $color-paper,
+  'inverse': $color-inverse,
+  'danger': $color-danger,
+  'success': $color-success,
+  'black': $color-black,
+  'white': $color-white,
+  'active-link': $color-active-link,
+);
+
+$font-display: 'SSOldburgMTLight';
+$font-display-bold: 'SSOldburgMTBold';
+$font-body: 'AvenirNextGeoRegular';
+$font-body-medium: 'AvenirNextGeoMedium';
+$font-body-bold: 'AvenirNextGeoBold';
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$leading-tight: 1.15;
+$leading-snug: 1.3;
+$leading-body: 1.5;
+
+$tracking-tight: -0.5px;
+$tracking-wide: 2px;
+
+$space: (
+  0: 0,
+  1: 4px,
+  2: 8px,
+  3: 12px,
+  4: 16px,
+  5: 20px,
+  6: 24px,
+  8: 32px,
+  10: 40px,
+  12: 48px,
+  16: 64px,
+  20: 80px,
+  24: 96px,
+  32: 128px,
+);
+
+$gutter: 40px;
+
+$radius-sm: 4px;
+$radius-md: 12px;
+$radius-lg: 20px;
+$radius-pill: 999px;
+
+$shadow-soft: 0 18px 40px rgb(28 25 22 / 8%);
+$shadow-header: 0 1px 0 rgb(28 25 22 / 8%);
+
+$transition-fast: 160ms ease;
+$transition-base: 280ms ease;
+$transition-slow: 520ms cubic-bezier(0.22, 1, 0.36, 1);
+
+$header-height: 80px;
+
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1280px,
+);
+
+$z-index: (
+  'base': 1,
+  'header': 100,
+  'nav': 150,
+  'cookies': 280,
+  'modal': 300,
+  'toast': 400,
+);
+
+@mixin css-tokens {
+  :root {
+    @each $name, $value in $colors {
+      --color-#{$name}: #{$value};
+    }
+
+    --font-display: #{$font-display};
+    --font-display-bold: #{$font-display-bold};
+    --font-body: #{$font-body};
+    --font-body-medium: #{$font-body-medium};
+    --font-body-bold: #{$font-body-bold};
+    --header-height: #{$header-height};
+    --gutter: #{$gutter};
+    --radius-md: #{$radius-md};
+    --shadow-soft: #{$shadow-soft};
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+}

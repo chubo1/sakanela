@@ -1,0 +1,101 @@
+@use '../abstracts' as *;
+
+.site-loader {
+  position: fixed;
+  inset: 0;
+  z-index: z('toast') + 50;
+  display: flex;
+  overflow: hidden;
+  pointer-events: auto;
+}
+
+.site-loader__panel {
+  flex: 1 1 50%;
+  width: 50%;
+  height: 100%;
+  background: color('loader');
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.site-loader__panel--left {
+  transition: transform 0.85s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.site-loader__panel--right {
+  transition: transform 1.25s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.site-loader.is-leaving .site-loader__panel {
+  transform: translate3d(0, -100%, 0);
+}
+
+.site-loader__brand {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  @include flex-center;
+  padding: $gutter;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.45s ease;
+}
+
+.site-loader.is-leaving .site-loader__brand {
+  opacity: 0;
+  transition-duration: 0.35s;
+}
+
+.site-loader__progress {
+  position: absolute;
+  right: 0;
+  bottom: clamp(28px, 5vh, 64px);
+  left: 0;
+  z-index: 2;
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: px(13);
+  font-weight: $font-weight-regular;
+  letter-spacing: 0.18em;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  // Loader panels stay dark in both themes, so this cannot follow --color-ink.
+  color: #f3ede4;
+  pointer-events: none;
+}
+
+.site-loader.is-leaving .site-loader__progress {
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.site-loader__logo {
+  display: block;
+  width: min(78vw, 280px);
+  height: auto;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.site-loader__logo.is-ready {
+  visibility: visible;
+}
+
+html.is-loading,
+body.is-loading {
+  overflow: hidden;
+}
+
+html.is-loader-done .site-loader {
+  display: none;
+}
+
+@include reduced-motion {
+  .site-loader__panel,
+  .site-loader__brand,
+  .site-loader__progress {
+    transition: none !important;
+  }
+}

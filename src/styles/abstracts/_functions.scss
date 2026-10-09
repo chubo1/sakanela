@@ -1,0 +1,46 @@
+@use 'sass:map';
+@use 'sass:math';
+@use 'sass:meta';
+@use 'variables' as *;
+
+/// Normalize a unitless or px number to px.
+@function px($value) {
+  @if meta.type-of($value) == 'number' and math.unit($value) == 'px' {
+    @return $value;
+  }
+
+  @if meta.type-of($value) == 'number' and math.unit($value) == '' {
+    @return $value * 1px;
+  }
+
+  @error 'px() expects a unitless number or px value, got: #{$value}';
+}
+
+@function color($name) {
+  @return var(--color-#{$name});
+}
+
+@function space($key) {
+  @if map.has-key($space, $key) {
+    @return map.get($space, $key);
+  }
+
+  @error 'Unknown space key: #{$key}';
+}
+
+@function z($layer) {
+  @if map.has-key($z-index, $layer) {
+    @return map.get($z-index, $layer);
+  }
+
+  @error 'Unknown z-index layer: #{$layer}';
+}
+
+@function fluid-type($min-px, $max-px, $min-vw: 375, $max-vw: 1280) {
+  $min: px($min-px);
+  $max: px($max-px);
+  $slope: math.div($max-px - $min-px, $max-vw - $min-vw);
+  $intercept: $min-px - $slope * $min-vw;
+
+  @return clamp(#{$min}, #{$intercept * 1px} + #{$slope * 100vw}, #{$max});
+}

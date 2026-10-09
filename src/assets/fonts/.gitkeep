@@ -1,0 +1,2 @@
+# Local webfont files (.woff2) belong here.
+# Face rules live in src/styles/base/_typography.scss.

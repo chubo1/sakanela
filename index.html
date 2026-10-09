@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en" class="is-loading">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3ede4" />
+    <title>Sakanela — Spatial design studio</title>
+    <meta
+      name="description"
+      content="Sakanela is a spatial design studio working with interiors, courtyards, and quiet public rooms."
+    />
+    <meta property="og:title" content="Sakanela — Spatial design studio" />
+    <meta
+      property="og:description"
+      content="Interiors, courtyards, and rooms designed to hold silence as carefully as light."
+    />
+    <meta property="og:image" content="public/images/og-image.svg" />
+    <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400&family=Outfit:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+  <body class="page-shell" data-page="home" id="top">
+    <div
+      class="site-loader"
+      data-site-loader
+      role="status"
+      aria-live="polite"
+      aria-busy="true"
+      aria-label="Loading Sakanela"
+    >
+      <div class="site-loader__panel site-loader__panel--left" data-loader-panel="left"></div>
+      <div class="site-loader__panel site-loader__panel--right" data-loader-panel="right"></div>
+      <div class="site-loader__brand" data-loader-brand></div>
+      <!-- <p class="site-loader__progress" data-loader-progress aria-hidden="true">Loading... 0%</p> -->
+    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header site-header--overlay" data-header>
+      <div class="site-header__inner">
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle__bars" aria-hidden="true">
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+          </span>
+          <span class="nav-toggle__label">Menu</span>
+        </button>
+        <a class="logo" href="index.html" aria-label="Sakanela home">
+          <img
+            src="src/assets/images/en_logo_without_tagline.svg"
+            alt="Sakanela by Silk Development"
+            width="280"
+            height="34"
+          />
+        </a>
+        <a class="btn btn--outline site-header__contact" href="src/pages/contact.html"> Contacts </a>
+      </div>
+    </header>
+    <nav class="site-nav" id="site-nav" data-nav data-lenis-prevent>
+      <ul class="site-nav__list">
+        <li>
+          <a class="site-nav__link" href="index.html" data-nav-link>
+            <span class="site-nav__spin"><span class="site-nav__face">Homepage</span><span class="site-nav__face site-nav__face--next" aria-hidden="true">Home</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="site-nav__link" href="src/pages/about.html" data-nav-link>
+            <span class="site-nav__spin"><span class="site-nav__face">About project</span><span class="site-nav__face site-nav__face--next" aria-hidden="true">About project</span></span>
+          </a>
+        </li>   
+        <li>
+          <a class="site-nav__link" href="src/pages/about.html" data-nav-link>
+            <span class="site-nav__spin"><span class="site-nav__face">architecture & design</span><span class="site-nav__face site-nav__face--next" aria-hidden="true">About project</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="site-nav__link" href="src/pages/about.html" data-nav-link>
+            <span class="site-nav__spin"><span class="site-nav__face">news</span><span class="site-nav__face site-nav__face--next" aria-hidden="true">About project</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="site-nav__link" href="src/pages/contact.html" data-nav-link>
+            <span class="site-nav__spin"><span class="site-nav__face">Contact</span><span class="site-nav__face site-nav__face--next" aria-hidden="true">Contact</span></span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="site-nav__footer">
+        <div class="site-nav__contact">
+          <p class="site-nav__contact-label">Email</p>
+          <a class="site-nav__contact-value" href="mailto:hello@sakanela.ge">hello@sakanela.ge</a>
+        </div>
+        <div class="site-nav__contact">
+          <p class="site-nav__contact-label">Phone</p>
+          <a class="site-nav__contact-value" href="tel:+9954747447">+995 47 474 47</a>
+        </div>
+        <nav class="site-nav__contact" aria-label="Follow Us">
+          <p class="site-nav__contact-label">Follow Us</p>
+          <ul class="site-nav__social">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="site-nav__languages" aria-label="Language">
+        <a class="site-nav__language is-active" href="index.html" hreflang="en" lang="en" aria-current="true" aria-label="English"><span class="site-nav__language-text"><span class="site-nav__spin"><span class="site-nav__face">EN</span><span class="site-nav__face site-nav__face--next" aria-hidden="true">EN</span></span></span></a>
+        <a class="site-nav__language" href="index.html" hreflang="ka" lang="ka" aria-label="Georgian"><span class="site-nav__language-text"><span class="site-nav__spin"><span class="site-nav__face">GE</span><span class="site-nav__face site-nav__face--next" aria-hidden="true">GE</span></span></span></a>
+        <a class="site-nav__language" href="index.html" hreflang="ru" lang="ru" aria-label="Russian"><span class="site-nav__language-text"><span class="site-nav__spin"><span class="site-nav__face">RU</span><span class="site-nav__face site-nav__face--next" aria-hidden="true">RU</span></span></span></a>
+      </div>
+    </nav>
+
+    <main id="main">
+      <div
+        class="hero-scene"
+        data-hero-scene
+        data-parallax-trigger
+        data-parallax-start="top top"
+        data-parallax-end="bottom bottom"
+      >
+        <section class="hero" data-hero-sequence>
+          <div class="hero__media" aria-hidden="true">
+            <canvas class="hero__canvas" data-hero-canvas></canvas>
+          </div>
+          <div class="hero__content">
+            <h1 class="hero__title" data-animate>The city<br />around you</h1>
+            <div class="scroll_down">
+              <svg viewBox="175 120 200 245" aria-label="Scroll down" role="img">
+                <!-- upper chevron (sits 99 units above the lower one) -->
+                <g transform="translate(0,-99)">
+                  <g class="top">
+                    <polyline class="chevron" points="211,289 275.5,340 340,289"/>
+                  </g>
+                </g>
+                <!-- lower chevron -->
+                <g class="bottom">
+                  <polyline class="chevron" points="211,289 275.5,340 340,289"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </section>
+        <div class="hero__track" data-hero-track aria-hidden="true"></div>
+
+        <section class="section history">
+          <div class="hero__wave" aria-hidden="true"></div>
+          <div class="container history__inner">
+            <h2 class="history__title" data-animate>
+              A place where<br />
+              the city was always in motion
+            </h2>
+
+            <div class="history__grid">
+              <div class="history__col history__col--left">
+                <div class="history__copy" data-animate>
+                  <p>
+                    The history of Sakanela began when Tbilisi was expanding toward modern-day Vera.
+                  </p>
+                  <p>
+                    In the late 19th and early 20th centuries, a network of streets and slopes
+                    gradually emerged here, connecting the heights of Vera to the banks of the
+                    Mtkvari River. Sakanela Descent was an integral part of this urban route: a
+                    gateway from the upper city down to the water’s edge.
+                  </p>
+                  <p>
+                    Nearby lay Belle-Vue, one of the most prominent public gardens of old Tbilisi,
+                    while just a short distance away, at the top of Vera Descent, a historic
+                    velodrome hosted races. Thus, this place wove together the city’s daily rhythms,
+                    its constant movement, and its moments of unhurried leisure.
+                  </p>
+                </div>
+
+                <figure
+                  class="history__figure history__figure--alt parallax-media"
+                  data-animate
+                  data-animate-delay="1"
+                  data-parallax-trigger
+                >
+                  <img
+                    src="src/assets/images/history_2.jpg"
+                    alt="Contemporary streetscape near Sakanela"
+                    width="720"
+                    height="480"
+                    loading="lazy"
+                    data-parallax-speed="0.8"
+                  />
+                </figure>
+              </div>
+
+              <div class="history__col history__col--right">
+                <figure
+                  class="history__figure history__figure--main parallax-media"
+                  data-animate
+                  data-animate-delay="1"
+                  data-parallax-trigger
+                >
+                  <img
+                    src="src/assets/images/history_1.jpg"
+                    alt="Tbilisi skyline and the Mtkvari River at dusk"
+                    width="960"
+                    height="640"
+                    loading="lazy"
+                    data-parallax-speed="0.5"
+                  />
+                </figure>
+
+                <div class="history__action" data-animate data-animate-delay="2">
+                  <a class="btn btn--outline" href="src/pages/about.html">
+                    More
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="section living">
+        <div class="container living__inner">
+          <p class="living__eyebrow" data-animate>
+            Sakanela<br />
+            Way of living
+          </p>
+          <h2 class="living__title" data-animate>
+            At Sakanela,<br />
+            your living environment<br />
+            extends well beyond<br />
+            your apartment
+          </h2>
+          <div class="living__copy" data-animate data-animate-delay="1">
+            <p>
+              Everything that makes daily life seamless and comfortable is brought together within a
+              single development: fitness, spa, dining, spaces for work, meetings, and relaxation.
+            </p>
+            <p>
+              Here, the vibrant rhythm of the city and a peaceful residential environment come
+              naturally together.
+            </p>
+          </div>
+          <div class="living-carousel" data-living-carousel data-animate data-animate-delay="2">
+            <div class="swiper living-carousel__slider" data-living-carousel-slider>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide living-carousel__slide">
+                  <article class="living-card">
+                    <div class="living-card__media">
+                      <img
+                        src="src/assets/images/living-fitness.jpg"
+                        alt="Outdoor pool framed by a timber deck and garden"
+                        width="1200"
+                        height="800"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 class="living-card__title">Fitness</h3>
+                  </article>
+                </div>
+                <div class="swiper-slide living-carousel__slide">
+                  <article class="living-card">
+                    <div class="living-card__media">
+                      <img
+                        src="src/assets/images/living-spa.jpg"
+                        alt="Dumbbell rack in a sunlit gym"
+                        width="1200"
+                        height="800"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 class="living-card__title">Spa</h3>
+                  </article>
+                </div>
+                <div class="swiper-slide living-carousel__slide">
+                  <article class="living-card">
+                    <div class="living-card__media">
+                      <img
+                        src="src/assets/images/living-dining.jpg"
+                        alt="Plated salmon with wine glasses at the table"
+                        width="1200"
+                        height="800"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 class="living-card__title">Dining</h3>
+                  </article>
+                </div>
+                <div class="swiper-slide living-carousel__slide">
+                  <article class="living-card">
+                    <div class="living-card__media">
+                      <img
+                        src="src/assets/images/living-work.jpg"
+                        alt="Quiet office corridor with glass-walled workspaces"
+                        width="1200"
+                        height="800"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 class="living-card__title">Spaces for work</h3>
+                  </article>
+                </div>
+                <div class="swiper-slide living-carousel__slide">
+                  <article class="living-card">
+                    <div class="living-card__media">
+                      <img
+                        src="src/assets/images/living-meetings.jpg"
+                        alt="Meeting table in a light-filled room"
+                        width="1200"
+                        height="800"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 class="living-card__title">Meetings</h3>
+                  </article>
+                </div>
+                <div class="swiper-slide living-carousel__slide">
+                  <article class="living-card">
+                    <div class="living-card__media">
+                      <img
+                        src="src/assets/images/living-relaxation.jpg"
+                        alt="Hotel courtyard and pool for unhurried rest"
+                        width="1200"
+                        height="800"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 class="living-card__title">Relaxation</h3>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-scrollbar living-carousel__scrollbar"
+              data-living-carousel-scrollbar
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="location" aria-labelledby="location-title">
+        <div class="location__layout">
+          <figure class="location__media" data-parallax-trigger>
+            <div class="location__frame">
+              <div class="location__parallax" data-parallax-speed="0.35">
+                <img
+                  class="location__image"
+                  src="src/assets/images/hero.jpg"
+                  alt="Sakanela on the Mtkvari waterfront, at the centre of the city"
+                  width="1920"
+                  height="1080"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <div class="location__content">
+            <p class="location__eyebrow" data-animate>Location</p>
+            <h2 class="location__title" id="location-title" data-animate>
+              At the centre <br />
+              of the city
+            </h2>
+            <div class="location__copy" data-animate data-animate-delay="1">
+              <p>
+                Sakanela is situated on the right embankment of the Mtkvari River, adjacent to
+                Republic Square, right where Vera, Rustaveli Avenue, the embankment, and
+                Marjanishvili all converge.
+              </p>
+              <p>
+                As a result, the most vital parts of the city become effortlessly accessible in your
+                day-to-day life.
+              </p>
+            </div>
+            <p class="location__lead" data-animate data-animate-delay="1">
+              Just a short walk or a few minutes’ drive away:
+            </p>
+            <ul class="location__places" data-animate data-animate-delay="2">
+              <li>Republic Square</li>
+              <li>Rustaveli Avenue</li>
+              <li>Vera</li>
+              <li>Marjanishvili Bridge</li>
+              <li>Mtkvari Embankment</li>
+              <li>Radisson Blu Iveria</li>
+              <li>Telegraph Hotel</li>
+            </ul>
+            <div class="location__action" data-animate data-animate-delay="2">
+              <a class="btn btn--outline" href="src/pages/about.html">
+                More
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="architecture"
+        id="architecture"
+        aria-labelledby="architecture-title"
+        data-architecture
+      >
+        <div class="container architecture__inner">
+          <p class="architecture__eyebrow" data-animate>Architecture by GRAFT</p>
+
+          <div class="architecture__layout">
+            <h2 class="architecture__title" id="architecture-title" data-animate>
+              <span class="architecture__title-lead">Tbilisi<br />Character,</span>
+              <span class="architecture__title-accent">Contemporary<br />Architecture</span>
+            </h2>
+
+            <div class="architecture__media" data-architecture-media>
+              <div class="architecture__slides">
+                <figure class="architecture__slide" data-architecture-slide>
+                  <img
+                    src="src/assets/images/hero.jpg"
+                    alt="Rooftop terrace looking toward a vine-covered building at Sakanela"
+                    width="1200"
+                    height="800"
+                    loading="lazy"
+                  />
+                </figure>
+                <figure class="architecture__slide" data-architecture-slide>
+                  <img
+                    src="src/assets/images/history_1.jpg"
+                    alt="Tbilisi skyline and the Mtkvari River at dusk"
+                    width="1200"
+                    height="800"
+                    loading="lazy"
+                  />
+                </figure>
+                <figure class="architecture__slide" data-architecture-slide>
+                  <img
+                    src="src/assets/images/history_2.jpg"
+                    alt="Contemporary streetscape near Sakanela"
+                    width="1200"
+                    height="800"
+                    loading="lazy"
+                  />
+                </figure>
+                <figure class="architecture__slide" data-architecture-slide>
+                  <img
+                    src="src/assets/images/living-work.jpg"
+                    alt="Quiet interior corridor with glass-walled workspaces"
+                    width="1200"
+                    height="800"
+                    loading="lazy"
+                  />
+                </figure>
+                <figure class="architecture__slide" data-architecture-slide>
+                  <img
+                    src="src/assets/images/living-relaxation.jpg"
+                    alt="Courtyard and pool framed by Sakanela’s architecture"
+                    width="1200"
+                    height="800"
+                    loading="lazy"
+                  />
+                </figure>
+              </div>
+              <!-- <div class="architecture__counter" data-architecture-counter aria-live="polite">
+                <span class="architecture__counter-current" data-architecture-counter-current>01</span>
+                <span class="architecture__counter-sep" aria-hidden="true"> — </span>
+                <span class="architecture__counter-total" data-architecture-counter-total>05</span>
+              </div> -->
+            </div>
+
+            <div class="architecture__content" data-animate data-animate-delay="1">
+              <div class="architecture__copy">
+                <p>
+                  The architecture of Sakanela was envisioned by the German studio GRAFT. The
+                  project’s central inspiration is the location itself: its rich history, the
+                  distinctive façades of old Tbilisi, traditional balconies, and complex
+                  architectural details.
+                </p>
+                <p>
+                  Rather than directly replicating these historic elements, GRAFT reinterprets them
+                  in a universal language of contemporary architecture.
+                </p>
+              </div>
+              <div class="architecture__action">
+                <a class="btn btn--outline" href="src/pages/about.html">
+                  More
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section roadmap" aria-labelledby="roadmap-title">
+        <div class="container roadmap__inner">
+          <h2 class="roadmap__title" id="roadmap-title" data-animate>Roadmap</h2>
+          <a
+            class="roadmap__stream"
+            href="#"
+            data-animate
+            data-animate-delay="1"
+          >
+            See Live Stream
+            <span class="roadmap__live" aria-hidden="true"></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div class="site-footer__intro">
+          <h2 class="site-footer__title">Let’s talk</h2>
+          <div class="site-footer__contacts">
+            <div class="site-footer__item">
+              <p class="site-footer__label">Email</p>
+              <a class="site-footer__value underline" href="mailto:hello@sakanela.ge">hello@sakanela.ge</a>
+            </div>
+            <div class="site-footer__item">
+              <p class="site-footer__label">Phone</p>
+              <a class="site-footer__value underline" href="tel:+9954747447">+995 47 474 47</a>
+            </div>
+            <div class="site-footer__item">
+              <p class="site-footer__label">3 Tengiz Abuladze</p>
+              <p class="site-footer__value underline">Batumi, Georgia</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="site-footer__menus">
+          <nav class="site-footer__col" aria-labelledby="footer-sitemap">
+            <p class="site-footer__heading" id="footer-sitemap">Sitemap</p>
+            <ul class="site-footer__list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="src/pages/about.html">About Project</a></li>
+              <li><a href="#architecture">Architecture &amp; Design</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="src/pages/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <nav class="site-footer__col" aria-labelledby="footer-legal">
+            <p class="site-footer__heading" id="footer-legal">Legal</p>
+            <ul class="site-footer__list">
+              <li><a href="#terms">Terms &amp; Conditions</a></li>
+              <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+          </nav>
+          <nav class="site-footer__col" aria-labelledby="footer-social">
+            <p class="site-footer__heading" id="footer-social">Follow Us</p>
+            <ul class="site-footer__list">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </nav>
+          <div class="site-footer__col">
+            <a class="site-footer__heading site-footer__top" href="#top" data-back-to-top>
+              Back to top
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container site-footer__bar">
+        <p>&copy; <span data-year></span> All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <aside
+      class="cookie-banner"
+      data-cookie-banner
+      hidden
+      role="dialog"
+      aria-labelledby="cookie-banner-title"
+    >
+      <p class="cookie-banner__text" id="cookie-banner-title">
+        We use cookies to enhance<br />
+        Your experience
+      </p>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__btn--accept" type="button" data-cookie-accept>Accept</button>
+        <button class="cookie-banner__btn cookie-banner__btn--reject" type="button" data-cookie-decline>Decline</button>
+      </div>
+    </aside>
+
+    <script src="dist/js/main.js"></script>
+  </body>
+</html>

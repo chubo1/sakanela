@@ -1,0 +1,40 @@
+@use '../abstracts' as *;
+
+// Lenis base styles are imported from the package in smoothScroll.js.
+// Site-level overrides and parallax helpers live here.
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+html {
+  overflow-x: clip;
+}
+
+body {
+  overflow-x: clip;
+}
+
+[data-parallax-speed] {
+  will-change: transform;
+}
+
+.parallax-media {
+  position: relative;
+  overflow: hidden;
+
+  > img[data-parallax-speed] {
+    display: block;
+    max-width: none;
+    object-fit: cover;
+    will-change: transform;
+  }
+}
+
+@include reduced-motion {
+  [data-parallax-speed] {
+    will-change: auto;
+    transform: none !important;
+  }
+}
